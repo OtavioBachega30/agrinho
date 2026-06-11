@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #101010;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: white;
+    height: 110px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 120px;
+    height:80px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+h1{
+    margin-top: 35px;
+    margin-left: -15px;
+    font-size: 30px;
+}
+
+.nav-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.nav-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-button:active{
+    color: #6cc810;
+}
+
+main{
+    margin-top: 110px;
+    position: relative;
+    
+}
+
+body{
+     margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.diagnostico {
+    max-width: 1400px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: #121111;
+    padding: 30px;
+    border-radius: 15px;
+    border:#6cc8109e 0.25px solid;
+}
+
+.diagnostico{
+    max-width: 1400px;
+    height: 450px;
+    transition: 0.4s;
+}
+
+.diagnostico.resultado{
+    height: auto;
+    min-height: 600px;
+}
+
+.passos {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 40px 0;
+}
+
+.passos::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    height: 3px;
+    background: #2a2a2a;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.passo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #1b1b1b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.concluido {
+    background: #6cc810;
+    color: black;
+}
+
+#alternativas {
+    display: flex;
+    gap: 10px;
+}
+
+#alternativas:hover{
+    border-color:#7dff1d;
+    box-shadow:
+    0 0 15px rgba(125,255,29,.25);
+}
+
+.opcao {
+    padding: 12px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+}
+
+h8{
+    margin-left: 500px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.reiniciar{
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reiniciar:hover{
+    background-color: #6cc810;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.definicao{
+    color: rgba(255, 255, 255, 0.74);
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    width: 360px;
+}
+
+.planta{
+    max-width: 60px;
+    height: 60px;
+    text-align: center;
+    filter: brightness(0) saturate(100%) 
+    invert(69%) sepia(91%) saturate(1502%) 
+    hue-rotate(41deg) brightness(96%) contrast(90%);
+    margin-top: 16px;
+}
+
+footer{
+    background-color: #101010;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 70px;
+}
+
+h6{
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+    margin-left: 35px;
+    width: 300px;
+    text-align: left;
+    color: white;
+    margin-top: 12px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 15px;
+    display:block;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #6cc810;
+}
+
+.footerb{
+    background-color: #101010;
+    border-top: none;
+    border-bottom: #5252528a solid 1px;
+    border-left: none;
+    border-right: none;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+.faq-conteudo{
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: white;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 15px;
+}
+
+.faq-conteudo.ativo{
+    max-height: 300px;
+    padding: 0 15px 15px 15px;
+}
+
+.faq-titulo{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: #6cc810;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.faq-esquerda{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.seta{
+    font-size: 24px;
+}
+.faq-titulo:hover{
+    background-color: #222;
+}
+
+.faq-item{
+    margin-bottom: 15px;
+    background-color: #121111;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    border:#6cc8109e 0.25px solid;
+    max-width: 1480px;
+    display: block;
+    margin-left: auto;
+margin-right: auto;
+}
+
+.fundo{
+    width: 1200px;
+    height: 420px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.folha3{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 100px;
+     filter: brightness(0) saturate(100%) 
+    invert(69%) sepia(91%) saturate(1502%) 
+    hue-rotate(41deg) brightness(96%) contrast(90%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-size: 55px;
+    margin-top: 100px;
+}
+
+.descricao1{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.vector{
+    width: 90px;
+    margin-top: 0px;
+   filter: brightness(0) saturate(100%) 
+    invert(69%) sepia(91%) saturate(1502%) 
+    hue-rotate(41deg) brightness(96%) contrast(90%); 
+}
+
+.vector1{
+    width: 80px;
+    margin-top: 12px;
+   filter: brightness(0) saturate(100%) 
+    invert(69%) sepia(91%) saturate(1502%) 
+    hue-rotate(41deg) brightness(96%) contrast(90%); 
+}
+
+.box1{
+    border: none;
+    background-color: #6cc81020;
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+}
+
+h7{
+    color:#6cc810;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 0px;
+}
+
+.opcao{
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagem-opcao{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(0) saturate(100%) 
+    invert(69%) sepia(91%) saturate(1502%) 
+    hue-rotate(41deg) brightness(96%) contrast(90%); 
+}
+
+#resultado{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.titulo-podio{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.podio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.lugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    
+    width: 180px;
+}
+
+.medalha{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.bloco{
+   background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.primeiro-bloco{
+    height: 220px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+}
+
+.segundo-bloco{
+    height: 160px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+}
+
+.terceiro-bloco{
+    height: 150px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid #6cc8102d;
+}
+
+.lugar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-podio{
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: -15px;
+    z-index: 10;
+}
+
+
+.medalha-podio{
+    width: 95px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -45px;
+    z-index: 10;
+}
+
+.bloco{
+    position: relative;
+}
+
+.imagem-tecnologia{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    filter: brightness(0) saturate(100%)
+    invert(69%) sepia(91%) saturate(1502%)
+    hue-rotate(41deg) brightness(96%)
+    contrast(90%);
+}
